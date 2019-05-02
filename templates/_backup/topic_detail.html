@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<nav>
+    {% for topic in topics %}
+        <a class="topic-tag topic-tag-link f6" href="/topics/{{ topic.name }}/">{{ topic.name }} ({{ topic.count }})</a>
+    {% endfor %}
+</nav>
+<h1>{{ topic.name }} ({{ topic.count }})</h1>
+<div id="repos">
+{% for repo in topic.repos.all %}
+    {% include "repo_detail.html" with repo=repo %}
+{% endfor %}
+<div>
+{% endblock %}

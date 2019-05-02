@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<nav>
+    {% for topic in topics %}
+        <a class="topic-tag topic-tag-link f6" href="/stars/topics/{{ topic.name }}/">{{ topic.name }} ({{ topic.count }})</a>
+    {% endfor %}
+</nav>
+{% endblock %}

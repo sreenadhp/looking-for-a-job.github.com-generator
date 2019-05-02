@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% include "gists/search.html" %}
+    <div id="user-repositories-list">
+    {% for gist in gists %}
+        {% include "gists/gist_detail.html" with gist=gist %}
+    {% endfor %}
+    </div>
+    {% include "gists/blankslate.html" %}
+{% endblock %}

@@ -1,0 +1,11 @@
+<div class="repo border-bottom">
+    <h3><a href="{{ repo.html_url }}" itemprop="name codeRepository">{{ repo.name }} </a></h3>
+    {% if repo.description %}
+    <div class="text-gray description">{{ repo.description }}</div>
+    {% endif %}
+    <div class="tags">
+    {% for topic in repo.topics.all %}
+        <a class="topic-tag topic-tag-link f6" href="#">{{ topic.name }}</a>
+    {% endfor %}
+    </div>
+</div>

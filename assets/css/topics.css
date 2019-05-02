@@ -1,0 +1,12 @@
+.topic-tag {
+    background-color: #f1f8ff;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 .5em .5em 0;
+    padding: .3em .9em;
+    white-space: nowrap;
+}
+.topic-tag-link:hover {
+    background-color:#def;
+    text-decoration:none
+}

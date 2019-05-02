@@ -1,0 +1,93 @@
+<div class="border-bottom border-gray-dark py-3">
+  <!-- '"` --><!-- </textarea></xmp> -->
+  <form data-pjax="true" data-pjax-preserve-scroll="true" class="TableObject" data-results-container="user-repositories-list" aria-label="Repositories" role="search" action="/looking-for-a-job" accept-charset="UTF-8" method="get">
+    <input name="utf8" type="hidden" value="✓">
+    <div class="TableObject-item TableObject-item--primary pr-4" style>
+      <input type="hidden" name="tab" value="repositories">
+      <input type="search" id="your-repos-filter" name="q" class="form-control width-full js-autosearch-field" placeholder="Find a repository…" autocomplete="off" aria-label="Find a repository…" value="">
+    </div>
+
+    <div class="TableObject-item text-right">
+      <details class="details-reset details-overlay select-menu d-inline-block select-menu-modal-right">
+        <summary class="btn select-menu-button" aria-haspopup="menu">
+          <i>Type:</i>
+          <span data-menu-button="">
+            All
+          </span>
+        </summary>
+
+        <details-menu class="select-menu-modal position-absolute" style="z-index: 99;" role="menu">
+          <div class="select-menu-header text-left">
+            <span class="select-menu-title">Select type</span>
+          </div>
+          <div class="select-menu-list">
+              <label class="select-menu-item" role="menuitemradio" aria-checked="true" tabindex="0">
+                <input type="radio" name="type" id="type_" value="" data-autosubmit="true" checked="checked">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <span class="text-normal select-menu-item-text" data-menu-button-text="">All</span>
+              </label>
+              <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                <input type="radio" name="type" id="type_public" value="public" data-autosubmit="true">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <span class="text-normal select-menu-item-text" data-menu-button-text="">Public</span>
+              </label>
+              <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                <input type="radio" name="type" id="type_private" value="private" data-autosubmit="true">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <span class="text-normal select-menu-item-text" data-menu-button-text="">Private</span>
+              </label>
+              <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                <input type="radio" name="type" id="type_source" value="source" data-autosubmit="true">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <span class="text-normal select-menu-item-text" data-menu-button-text="">Sources</span>
+              </label>
+              <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                <input type="radio" name="type" id="type_fork" value="fork" data-autosubmit="true">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <span class="text-normal select-menu-item-text" data-menu-button-text="">Forks</span>
+              </label>
+              <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                <input type="radio" name="type" id="type_archived" value="archived" data-autosubmit="true">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <span class="text-normal select-menu-item-text" data-menu-button-text="">Archived</span>
+              </label>
+              <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                <input type="radio" name="type" id="type_mirror" value="mirror" data-autosubmit="true">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <span class="text-normal select-menu-item-text" data-menu-button-text="">Mirrors</span>
+              </label>
+          </div>
+        </details-menu>
+      </details>
+
+        <details class="details-reset details-overlay select-menu d-inline-block select-menu-modal-right">
+          <summary class="btn select-menu-button" aria-haspopup="menu">
+            <i>Language:</i>
+            <span data-menu-button="">
+              All
+            </span>
+          </summary>
+
+          <details-menu class="select-menu-modal position-absolute" style="z-index: 99;" role="menu">
+            <div class="select-menu-header text-left">
+              <span class="select-menu-title">Select language</span>
+            </div>
+            <div class="select-menu-list">
+              <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                <input type="radio" name="language" id="language_" value="" data-autosubmit="true">
+                <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                <span class="text-normal select-menu-item-text" data-menu-button-text="">All</span>
+              </label>
+              {% for language in languages %}
+                <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                  <input type="radio" name="language" id="language_html" value="html" data-autosubmit="true">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+                  <span class="text-normal select-menu-item-text" data-menu-button-text="">{{ language }}</span>
+                </label>
+                {% endfor %}
+            </div>
+          </details-menu>
+        </details>
+    </div>
+</form>
+</div>

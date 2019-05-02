@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "primer": "^11.0.0"
+  }
+}

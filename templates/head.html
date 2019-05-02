@@ -1,0 +1,5 @@
+{% load i18n static %}
+{% load render_bundle from webpack_loader %}
+<title>{{ title }}</title>
+<link rel="icon" type="image/png" href="https://styleguide.github.com/assets/favicon.png">
+{% render_bundle 'main' 'css' %}

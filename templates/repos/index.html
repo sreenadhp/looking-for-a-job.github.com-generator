@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% include "repos/search.html" %}
+    <div id="user-repositories-list">
+    {% for repo in repos %}
+        {% include "repos/repo_detail.html" with repo=repo %}
+    {% endfor %}
+    </div>
+    {% include "repos/blankslate.html" %}
+{% endblock %}
