@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <a href="https://gist.github.com/{{ username }}" target="_blank">gist.github.com/{{ username }}</a>
     {% include "gists/search.html" %}
     <div id="user-repositories-list">
     {% for gist in gists %}

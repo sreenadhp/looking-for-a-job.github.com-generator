@@ -26,7 +26,7 @@ config.output.publicPath  = dev_url+'/'
 
 config.module = {rules: [styleRule]};
 
-config.plugins.unshift(new BundleTracker({filename: './webpack-stats.production.json'}));
+config.plugins.unshift(new BundleTracker({filename: './webpack-stats.dev.json'}));
 config.plugins.concat([
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NoEmitOnErrorsPlugin(), // don't reload if there is an error

@@ -1,7 +1,8 @@
+{% load emoji_tags %}
 <div class="repo border-bottom">
     <h3><a href="{{ repo.html_url }}" itemprop="name codeRepository">{{ repo.name }} </a></h3>
     {% if repo.description %}
-    <div class="text-gray description">{{ repo.description }}</div>
+    <div class="text-gray description">{{ repo.description|emoji_replace }}</div>
     {% endif %}
     <div class="tags">
     {% for topic in repo.topics.all %}

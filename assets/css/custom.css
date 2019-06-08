@@ -17,3 +17,8 @@ div#footer {
     margin-top: 10px;
     text-align: center;
 }
+
+.emoji {
+    width: 16px;
+    height: 16px;
+}

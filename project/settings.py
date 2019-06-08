@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'bakery',
     'corsheaders',
+    'emoji',
     'webpack_loader',
 
     "taggit",
@@ -122,13 +123,9 @@ GITHUB_USERNAME = os.popen("git config user.name").read().strip()
 GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = ''
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join('static'),
-)
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',

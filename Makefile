@@ -8,7 +8,6 @@ all:
 	make import
 	make dist
 	make build
-	make webpack
 	make push
 
 migrate:
@@ -32,8 +31,8 @@ webpack:
 dist:
 	rm -fr $(DIST)
 	make webpack
-	test -d $(REPO)/static/dist || mkdir -p $(REPO)/static/dist
-	rsync --delete -a static/dist/ $(REPO)/static/dist
+	test -d $(REPO)/static || mkdir -p $(REPO)/static
+	rsync --delete -a static/ $(REPO)/static
 
 push:
 	cd $(REPO) && make

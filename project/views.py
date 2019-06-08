@@ -8,7 +8,7 @@ from django.shortcuts import render
 
 class BaseView:
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+        context = dict()
         context["repos"] = Repo.objects.filter(full_name__contains=settings.GITHUB_USERNAME).filter(fork=False).filter(private=False).all()
         context["starred_repos"] = StarredRepo.objects.filter(private=False).all()
         context["gists"] = Gist.objects.filter(public=True).all()

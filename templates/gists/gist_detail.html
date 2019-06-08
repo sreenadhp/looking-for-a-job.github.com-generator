@@ -1,5 +1,6 @@
+{% load emoji_tags %}
 <div class="repo border-bottom">
     <div class="text-gray description">
-        <a href="{{ gist.html_url }}" itemprop="name codeRepository">{{ gist.description }} </a>
+        <a href="{{ gist.html_url }}" itemprop="name codeRepository">{{ gist.description|emoji_replace }} </a>
     </div>
 </div>
